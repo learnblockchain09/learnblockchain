@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/learnblockchain09/learnblockchain/issues"
   },
-  "homepage": "https://github.com/learnblockchain09/learnblockchain#readme"
+  "homepage": "https://github.com/learnblockchain09/learnblockchain#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }
