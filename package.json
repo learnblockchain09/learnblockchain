@@ -1,0 +1,20 @@
+{
+  "name": "learnblockchain",
+  "version": "1.0.0",
+  "description": "let's learn!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learnblockchain09/learnblockchain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learnblockchain09/learnblockchain/issues"
+  },
+  "homepage": "https://github.com/learnblockchain09/learnblockchain#readme"
+}
