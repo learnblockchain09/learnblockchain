@@ -20,6 +20,10 @@ class Block{
         
     }
 
+    static genesis(){   // 1. Block der chain
+        return new this("Genesis time", "-----", "xABC123", []);    // call constructor
+    }
+
 }
 
-module.exports = Block; //Export an Modul
+module.exports = Block; //Export als Modul
