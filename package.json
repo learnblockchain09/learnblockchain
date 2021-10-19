@@ -20,5 +20,8 @@
   "homepage": "https://github.com/learnblockchain09/learnblockchain#readme",
   "devDependencies": {
     "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }

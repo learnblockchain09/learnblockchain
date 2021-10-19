@@ -1,4 +1,6 @@
 
+const SHA256 = require("crypto-js/sha256");
+
 // Klasse
 
 class Block{
@@ -21,8 +23,25 @@ class Block{
     }
 
     static genesis(){   // 1. Block der chain
-        return new this("Genesis time", "-----", "xABC123", []);    // call constructor
+        return new this("Genesis time", "-----", "xABC123", ["data1", "data2","..."]);    // call constructor
     }
+
+    static mineBlock(lastBlock, ownData,){  // weitere Blocks in der Chain
+        const timestamp = Date.now();       // Zeit in ms seit 01.01.1970 / Standart aus der UNIX-Welt
+        const lastHash  = lastBlock.hash;    // Hash-Wert des Vorgängers
+        const hash      = Block.hash(timestamp,lastHash,ownData);
+    
+        return new this(timestamp,lastHash,hash,ownData); 
+
+
+
+    }
+
+    static hash(timestamp,lastHash,data){
+        return SHA256(`${timestamp}${lastHash}${data}`).toString();
+
+    }
+
 
 }
 
